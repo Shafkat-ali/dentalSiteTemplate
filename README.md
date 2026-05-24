@@ -2,6 +2,8 @@
 
 A static medical and dental website template for client projects. It includes three live pages, responsive styling, appointment request behavior, service filters, and reusable sections.
 
+https://shafkat-ali.github.io/dentalSiteTemplate/
+
 ## Pages
 
 - `index.html` - homepage with hero, trust stats, service highlights, and testimonial call to action
