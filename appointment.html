@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Appointment | ClearWave Dental</title>
+  <meta name="description" content="Appointment request page template with working local demo form.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="ClearWave Dental home">
+      <span class="brand-mark">CW</span>
+      <span>
+        <strong>ClearWave</strong>
+        <small>Dental Studio</small>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a class="active" href="appointment.html">Appointment</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero split">
+      <div>
+        <p class="eyebrow">Request appointment</p>
+        <h1>Turn visitor interest into a clear next step.</h1>
+        <p>This form is functional for template demos. It validates required fields, stores requests in localStorage, and shows the latest submission.</p>
+      </div>
+      <img src="assets/images/consultation.png" alt="Dental professional reviewing patient notes">
+    </section>
+
+    <section class="section form-layout">
+      <form class="appointment-form" id="appointmentForm">
+        <div class="form-row">
+          <label>
+            Full name
+            <input name="name" autocomplete="name" required placeholder="Jane Smith">
+          </label>
+          <label>
+            Phone
+            <input name="phone" autocomplete="tel" required placeholder="(555) 014-8200">
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required placeholder="jane@example.com">
+          </label>
+          <label>
+            Preferred day
+            <select name="day" required>
+              <option value="">Choose a day</option>
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+              <option>Saturday</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          Reason for visit
+          <select name="reason" required>
+            <option value="">Choose a service</option>
+            <option>Cleaning and exam</option>
+            <option>Cosmetic consultation</option>
+            <option>Emergency visit</option>
+            <option>New patient appointment</option>
+          </select>
+        </label>
+
+        <label>
+          Notes
+          <textarea name="notes" rows="5" placeholder="Tell us what is going on or what you would like to improve."></textarea>
+        </label>
+
+        <button class="button primary" type="submit">Send Request</button>
+        <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+      </form>
+
+      <aside class="contact-panel">
+        <h2>Clinic details</h2>
+        <dl>
+          <div>
+            <dt>Phone</dt>
+            <dd><a href="tel:+15550148200">(555) 014-8200</a></dd>
+          </div>
+          <div>
+            <dt>Address</dt>
+            <dd>210 Market Street, Suite 400<br>San Diego, CA 92101</dd>
+          </div>
+          <div>
+            <dt>Hours</dt>
+            <dd>Mon to Fri, 8:00 AM to 6:00 PM<br>Sat, 9:00 AM to 2:00 PM</dd>
+          </div>
+        </dl>
+
+        <div class="saved-request" id="savedRequest">
+          <strong>Latest request</strong>
+          <p>No demo request submitted yet.</p>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>ClearWave Dental Studio</strong>
+      <p>Template content for client demos. Replace with your client's address, phone, and hours.</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="tel:+15550148200">(555) 014-8200</a>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

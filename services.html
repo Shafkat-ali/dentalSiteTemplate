@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services | ClearWave Dental</title>
+  <meta name="description" content="Dental services page template with filters, procedure cards, and patient FAQs.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="ClearWave Dental home">
+      <span class="brand-mark">CW</span>
+      <span>
+        <strong>ClearWave</strong>
+        <small>Dental Studio</small>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="services.html">Services</a>
+      <a href="appointment.html">Appointment</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero compact">
+      <div>
+        <p class="eyebrow">Services</p>
+        <h1>Flexible treatment pages for every type of dental practice.</h1>
+        <p>Use these cards for general dentistry, orthodontics, pediatrics, implants, or medical clinic services.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="filter-row" role="group" aria-label="Filter services">
+        <button class="filter-button active" type="button" data-filter="all">All</button>
+        <button class="filter-button" type="button" data-filter="general">General</button>
+        <button class="filter-button" type="button" data-filter="cosmetic">Cosmetic</button>
+        <button class="filter-button" type="button" data-filter="urgent">Urgent</button>
+      </div>
+
+      <div class="service-list">
+        <article class="procedure" data-category="general">
+          <img src="assets/images/service-cleaning.png" alt="Dental cleaning tools in a clinic">
+          <div>
+            <span>General</span>
+            <h2>Dental Cleaning and Exam</h2>
+            <p>Routine hygiene visits, digital X-rays, oral cancer screening, and prevention guidance.</p>
+            <a href="appointment.html">Schedule cleaning</a>
+          </div>
+        </article>
+
+        <article class="procedure" data-category="cosmetic">
+          <img src="assets/images/service-cosmetic.png" alt="Cosmetic dental consultation">
+          <div>
+            <span>Cosmetic</span>
+            <h2>Smile Whitening</h2>
+            <p>Professional whitening options for brighter results with a plan matched to each patient.</p>
+            <a href="appointment.html">Start consultation</a>
+          </div>
+        </article>
+
+        <article class="procedure" data-category="general">
+          <img src="assets/images/consultation.png" alt="Dental checkup with patient">
+          <div>
+            <span>General</span>
+            <h2>Fillings and Restorations</h2>
+            <p>Natural-looking fillings, crowns, and restorative care focused on comfort and durability.</p>
+            <a href="appointment.html">Book care</a>
+          </div>
+        </article>
+
+        <article class="procedure" data-category="urgent">
+          <img src="assets/images/service-emergency.png" alt="Dental chair in a modern office">
+          <div>
+            <span>Urgent</span>
+            <h2>Emergency Dental Visit</h2>
+            <p>Same-day care for toothaches, chipped teeth, swelling, lost crowns, and urgent pain.</p>
+            <a href="appointment.html">Request urgent visit</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section muted">
+      <div class="section-heading">
+        <p class="eyebrow">Questions</p>
+        <h2>Patient FAQs</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>Can this template work for medical clinics too?</summary>
+          <p>Yes. Replace dental services with primary care, urgent care, pediatrics, dermatology, or specialty treatment pages.</p>
+        </details>
+        <details>
+          <summary>Does the appointment form send emails?</summary>
+          <p>The demo stores submissions in the browser. Connect the form to Formspree, Netlify Forms, or a backend API for production.</p>
+        </details>
+        <details>
+          <summary>Can each client have different colors and branding?</summary>
+          <p>Yes. Most theme colors live in the CSS variables at the top of assets/styles.css.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>ClearWave Dental Studio</strong>
+      <p>Template content for client demos. Replace with your client's address, phone, and hours.</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="appointment.html">Appointments</a>
+      <a href="tel:+15550148200">(555) 014-8200</a>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
